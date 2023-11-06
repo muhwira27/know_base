@@ -1,16 +1,58 @@
-# know_base
+# Know Base
 
-A new Flutter project.
+A simple Flutter quiz application that allows users to select quizzes on various topics, answer a series of questions, and receive a score at the end.
 
-## Getting Started
+[![made-with-flutter](https://img.shields.io/badge/Made%20with-Flutter-1f425f.svg)](https://flutter.dev/)
 
-This project is a starting point for a Flutter application.
+## Live Demo
 
-A few resources to get you started if this is your first Flutter project:
+[Know Base](https://know-base.netlify.app/)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Download
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ -
+
+## Features
+
+- Choose quiz from a list of quiz topics.
+- Answer a series of questions.
+- Receive a score at the end of the quiz.
+- Responsive design for different screen sizes.
+
+## Screenshots
+
+### Mobile
+
+<img src="https://github.com/muhwira27/know_base/blob/586f175ec8d1931161fbaae9a3975a8bedc2da7f/screenshots/mobile/Screenshot1.png" width="32%"> &nbsp; &nbsp; <img src="https://github.com/muhwira27/know_base/blob/586f175ec8d1931161fbaae9a3975a8bedc2da7f/screenshots/mobile/Screenshot2.png" width="32%"> <br>  
+<img src="https://github.com/muhwira27/know_base/blob/586f175ec8d1931161fbaae9a3975a8bedc2da7f/screenshots/mobile/Screenshot3.png" width="32%"> &nbsp; &nbsp; <img src="https://github.com/muhwira27/know_base/blob/586f175ec8d1931161fbaae9a3975a8bedc2da7f/screenshots/mobile/Screenshot4.png" width="32%"> <br> <br>
+
+### Desktop
+
+<img src="https://github.com/muhwira27/know_base/blob/586f175ec8d1931161fbaae9a3975a8bedc2da7f/screenshots/desktop/Screenshot1.png" > <br> <br> 
+<img src="https://github.com/muhwira27/know_base/blob/586f175ec8d1931161fbaae9a3975a8bedc2da7f/screenshots/desktop/Screenshot2.png" > <br> <br> 
+<img src="https://github.com/muhwira27/know_base/blob/586f175ec8d1931161fbaae9a3975a8bedc2da7f/screenshots/desktop/Screenshot3.png" > <br> <br> 
+<img src="https://github.com/muhwira27/know_base/blob/586f175ec8d1931161fbaae9a3975a8bedc2da7f/screenshots/desktop/Screenshot4.png" > <br> <br> 
+<img src="https://github.com/muhwira27/know_base/blob/586f175ec8d1931161fbaae9a3975a8bedc2da7f/screenshots/desktop/Screenshot5.png" > <br> <br>
+
+## Building from Source
+
+1. If you don't have Flutter SDK installed, please visit official [Flutter](https://flutter.dev/) site.
+2. Fetch latest source code from master branch.
+
+```
+git clone https://github.com/muhwira27/know_base.git
+```
+
+3. Change directory to simple_notes_app folder
+
+```
+cd know_base
+```
+
+4. Run the app with Android Studio or VS Code. Or the command line:
+
+```
+flutter pub get
+flutter run
+```
+<br> <br>
