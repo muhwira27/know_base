@@ -135,7 +135,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       style: TextStyle(fontSize: 14, color: Colors.white),
                     ),
                   ),
-                  const SizedBox(width: 14),
+                  const SizedBox(width: 20),
                   MaterialButton(
                     onPressed: () {
                       Navigator.pushAndRemoveUntil(
@@ -146,7 +146,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       );
                       selectedOption = null;
                     },
-                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
                     color: const Color(0xFF2ac86b),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
@@ -160,6 +160,7 @@ class _QuizScreenState extends State<QuizScreen> {
                 ],
               )
             ],
+            actionsPadding: const EdgeInsets.only(bottom: 20),
           );
         },
       );
