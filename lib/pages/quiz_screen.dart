@@ -73,10 +73,10 @@ class _QuizScreenState extends State<QuizScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Skor Anda",
+                  "Skor Kamu",
                   style: TextStyle(
                     fontSize: 20,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w400,
                   ),
                 )
               ],
@@ -85,27 +85,33 @@ class _QuizScreenState extends State<QuizScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  height: 140,
-                  width: 140,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: const Color(0xFF42bc9a),
-                      width: 1.5,
-                    ),
-                  ),
+                  height: 70,
+                  width: 200,
                   alignment: Alignment.center,
-                  child: Text(
-                    "$score / 100",
-                    style: const TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w600,
+                  child: RichText(
+                    text: TextSpan(
+                      text: score.toString(),
+                      style: const TextStyle(
+                        fontSize: 70,
+                        fontWeight: FontWeight.w700,
+                        color: Color(0xFF98c83c),
+                      ),
+                      children: const [
+                        TextSpan(
+                          text: "/100",
+                          style: TextStyle(
+                            fontSize: 36,
+                            fontWeight: FontWeight.w500,
+                            color: Color(0xFF5e5e63),
+                          ),
+                        )
+                      ],
                     ),
                   ),
-                )
+                ),
               ],
             ),
-            contentPadding: const EdgeInsets.only(top: 16, bottom: 40),
+            contentPadding: const EdgeInsets.only(top: 28, bottom: 54),
             actions: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -119,9 +125,9 @@ class _QuizScreenState extends State<QuizScreen> {
                       });
                       Navigator.pop(context);
                     },
-                    color: const Color(0xFF0082e8),
+                    color: const Color(0xFF2ac86b),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16),
+                      borderRadius: BorderRadius.circular(8),
                     ),
                     elevation: 0,
                     child: const Text(
@@ -129,7 +135,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       style: TextStyle(fontSize: 14, color: Colors.white),
                     ),
                   ),
-                  const SizedBox(width: 20),
+                  const SizedBox(width: 14),
                   MaterialButton(
                     onPressed: () {
                       Navigator.pushAndRemoveUntil(
@@ -140,9 +146,10 @@ class _QuizScreenState extends State<QuizScreen> {
                       );
                       selectedOption = null;
                     },
-                    color: const Color(0xFF0082e8),
+                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    color: const Color(0xFF2ac86b),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16),
+                      borderRadius: BorderRadius.circular(8),
                     ),
                     elevation: 0,
                     child: const Text(
