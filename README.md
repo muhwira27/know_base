@@ -37,7 +37,7 @@ A simple Flutter quiz application that allows users to select quizzes on various
 ## Building from Source
 
 1. If you don't have Flutter SDK installed, please visit official [Flutter](https://flutter.dev/) site.
-2. Fetch latest source code from master branch.
+2. Fetch latest source code from main branch.
 
 ```
 git clone https://github.com/muhwira27/know_base.git
